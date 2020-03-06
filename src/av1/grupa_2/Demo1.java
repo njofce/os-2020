@@ -3,23 +3,121 @@ package av1.grupa_2;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.RandomAccess;
 
 public class Demo1 {
 
-    // Find all .txt files in all-files directory,
-    // with only write permission
-    // and count their total size
+    // 1. Read/Write primitives
+    // 2. BufferedReader/Writer & append
+    // 3. Read from standard input
+    // 4. Redirect standard IO
+    // 5. Random Access File
 
     public static void main(String[] args) throws IOException {
 //        createNewFile();
 //        checkFileInDocuments();
 //        createDirectory();
-
+//
 //        listFilesFirstLevel();
-        listAllFilesWithRecursion();
-
+//        listAllFilesWithRecursion();
+//
 //        readFromFile();
 //        readFromFileCharLevel();
+
+//        writePrimitiveTypes();
+//        readPrimitive();
+
+//        writeBuffered();
+//        readBuffered();
+//        appendBuffered();
+//        redirectStandardOutput();
+//        System.out.println("This should be redirected to file!");
+//        readFromStdInput();
+        randomAccess();
+    }
+
+    public static void randomAccess() throws IOException {
+        File input = new File("file1.txt");
+        RandomAccessFile inputFile = new RandomAccessFile(input, "r");
+        RandomAccessFile outputFile = new RandomAccessFile("file-rev.txt", "rw");
+
+        long startPositionForOutput = 0;
+        for(long i = input.length() - 1; i >=0; i--) {
+            inputFile.seek(i);
+            int readByte = inputFile.read();
+
+            outputFile.seek(startPositionForOutput);
+            outputFile.write(readByte);
+            startPositionForOutput++;
+        }
+
+//        System.out.println(read);
+    }
+
+    public static void readFromStdInput() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String s = reader.readLine();
+
+        System.out.println("Read from std input: " + s);
+
+        reader.close();
+    }
+
+    public static void redirectStandardOutput() throws FileNotFoundException {
+        PrintStream output = new PrintStream(new FileOutputStream("std-out.txt"));
+        System.setOut(output);
+    }
+
+    public static void readBuffered() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("file-buff.txt")));
+
+        String line;
+
+        while( (line = reader.readLine()) != null) {
+            System.out.println(line);
+        }
+
+        reader.close();
+    }
+
+    public static void writeBuffered() throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("file-buff.txt"));
+
+        writer.write("This is a new line");
+
+        writer.close();
+    }
+
+    public static void appendBuffered() throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("file-buff.txt", true));
+
+        writer.write("\nThis is appended line");
+
+        writer.close();
+    }
+
+    public static void readPrimitive() throws IOException {
+        DataInputStream inputStream = new DataInputStream(new FileInputStream("file1.txt"));
+
+        double d = inputStream.readDouble();
+        float f = inputStream.readFloat();
+        System.out.println("Read from file: " + d);
+        System.out.println("Read from file: " + f);
+        inputStream.close();
+    }
+
+    public static void writePrimitiveTypes() throws IOException {
+        DataOutputStream outputStream = new DataOutputStream(new FileOutputStream("file1.txt"));
+
+        try{
+
+            outputStream.writeDouble(1.12);
+            outputStream.writeFloat(0.75f);
+
+        }finally {
+            outputStream.close();
+        }
     }
 
     public static void readFromFile() throws IOException {

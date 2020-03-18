@@ -12,10 +12,8 @@ public class ParallelExecutor extends Thread {
 
     @Override
     public void run() {
-        b1.increment();
-//        for (int i = 0; i < 20; i++) {
-//            System.out.println(name + ":" + i);
-//            b1.increment();
-//        }
+        for (int i = 0; i < 20; i++) {
+            b1.unsafeIncrement();
+        }
     }
 }

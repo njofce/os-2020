@@ -5,8 +5,11 @@ class Buffer {
     public int count = 0;
     public Buffer() {}
 
-    void increment(){
-        count++;
+    void unsafeIncrement() {
+        synchronized (this) {
+            count++;
+        }
+        System.out.println("accessed by thread: " + Thread.currentThread().getName());
     }
 
 }
@@ -14,17 +17,18 @@ class Buffer {
 public class Threading {
 
     public static void main(String[] args) throws InterruptedException {
-        Buffer b = new Buffer();
-        Thread parallelExecutor1 = new ParallelExecutor("p1", b);
-        Thread parallelExecutor2 = new ParallelExecutor("p2", b);
+        for(int i = 0; i < 20; i++) {
+            Buffer b = new Buffer();
+            Thread parallelExecutor1 = new ParallelExecutor("p1", b);
+            Thread parallelExecutor2 = new ParallelExecutor("p2", b);
 
-        parallelExecutor1.start();
-        parallelExecutor2.start();
+            parallelExecutor1.start();
+            parallelExecutor2.start();
 
-        parallelExecutor1.join();
-        parallelExecutor2.join();
+            parallelExecutor1.join();
+            parallelExecutor2.join();
 
-        System.out.println(b.count);
-
+            System.out.println("Total: " + b.count);
+        }
     }
 }

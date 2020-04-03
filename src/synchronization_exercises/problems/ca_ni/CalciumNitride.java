@@ -1,4 +1,4 @@
-package synchronization_exercises.problems;
+package synchronization_exercises.problems.ca_ni;
 
 import synchronization_exercises.ProblemExecution;
 import synchronization_exercises.TemplateThread;

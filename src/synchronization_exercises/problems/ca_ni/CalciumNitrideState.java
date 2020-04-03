@@ -1,4 +1,4 @@
-package synchronization_exercises.problems;
+package synchronization_exercises.problems.ca_ni;
 
 import synchronization_exercises.AbstractState;
 import synchronization_exercises.BoundCounterWithRaceConditionCheck;

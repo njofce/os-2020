@@ -1,0 +1,9 @@
+
+g	java:S116"MRename this field "Ca" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(μ§τωÿÿÿÿ
+f	java:S116"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°αίΐόÿÿÿÿ
+;
+java:S1174A"&Make this finalize() method protected.(χ δ
+B
+java:S1113A"-Do not override the Object.finalize() method.(χ δ
+h
+java:S1114A"SAdd a call to super.finalize() at the end of this Object.finalize() implementation.(χ δ

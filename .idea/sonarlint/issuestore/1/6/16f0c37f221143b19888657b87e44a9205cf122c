@@ -1,0 +1,39 @@
+
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¥Æ”õ
+M
+java:S1135%"2Complete the task associated to this TODO comment.(š­İøÿÿÿÿ
+Q
+java:S2696("6Make the enclosing method "static" or remove this set.(ŠËÇåşÿÿÿÿ
+Q
+java:S2696-"6Make the enclosing method "static" or remove this set.(ªü€Ôùÿÿÿÿ
+Q
+java:S2696."6Make the enclosing method "static" or remove this set.(¡ëª°úÿÿÿÿ
+L
+java:S26964"6Make the enclosing method "static" or remove this set.(Â¯êˆ
+M
+java:S1135L"2Complete the task associated to this TODO comment.(š­İøÿÿÿÿ
+L
+java:S2696O"6Make the enclosing method "static" or remove this set.(ã¯¡ƒ
+Q
+java:S2696T"6Make the enclosing method "static" or remove this set.(ªü€Ôùÿÿÿÿ
+Q
+java:S2696U"6Make the enclosing method "static" or remove this set.(¡ëª°úÿÿÿÿ
+L
+java:S2696["6Make the enclosing method "static" or remove this set.(µ„öà
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(ÜæÊ‘
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(ÚÂâ
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(¨–Óşûÿÿÿÿ
+N	java:S106y"9Replace this use of System.out or System.err by a logger.(ÚÂâ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(¨¶ÚÚúÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Î¨±
+]
+java:S2142‘"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+O	java:S106’"9Replace this use of System.out or System.err by a logger.(òİ‹
+]
+java:S2142£"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+O	java:S106¤"9Replace this use of System.out or System.err by a logger.(òİ‹
+T	java:S106Ç"9Replace this use of System.out or System.err by a logger.(¿‚ä¯øÿÿÿÿ
+T	java:S106Í"9Replace this use of System.out or System.err by a logger.(·ã­üÿÿÿÿ
+W	java:S125º"<This block of commented-out lines of code should be removed.(Ó¾ä­üÿÿÿÿ

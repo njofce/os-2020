@@ -1,0 +1,9 @@
+
+g
+java:S1192!"JDefine a constant instead of duplicating this literal "localhost" 3 times.(ÅÏ´ˆ8Æ¦Ñ£–.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÌìÅ/
+E
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ÿ“¤–.
+M
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º8¹À™¤–.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¥ËÄB8Ÿµ¤–.

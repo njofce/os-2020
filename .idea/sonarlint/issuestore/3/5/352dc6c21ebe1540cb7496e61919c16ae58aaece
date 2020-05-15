@@ -1,5 +1,24 @@
 
+k
+java:S2095H"NUse try-with-resources or close this "DataOutputStream" in a "finally" clause.(ÎÔÒ8†¼Ë”˜.
+P
+java:S2864g"4Iterate over the "entrySet" instead of the "keySet".(°æ,8ÄóÈ”˜.
+g
+java:S1192&"JDefine a constant instead of duplicating this literal "votes.txt" 4 times.(ÎÔÒ8üÄê–.
+P
+java:S2864T"4Iterate over the "entrySet" instead of the "keySet".(°æ,8ÄóÈ”˜.
+k
+java:S2095'"NUse try-with-resources or close this "DataOutputStream" in a "finally" clause.(‘ğ“Ú8ñ¥¡–.
+j
+java:S2095="MUse try-with-resources or close this "DataInputStream" in a "finally" clause.(æ¡¼‹8¡ä·–.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã·å
-E
-java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾†”‡–.
-T	java:S106"9Replace this use of System.out or System.err by a logger.(İúª>8¾†”‡–.
+F
+java:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÄóÈ”˜.
+d
+java:S2142‹"FEither re-interrupt this method or rethrow the "InterruptedException".(ò¶È8ÄóÈ”˜.
+o
+java:S2095t"MUse try-with-resources or close this "DataInputStream" in a "finally" clause.(ñæ˜ÿÿÿÿÿ8ÄóÈ”˜.
+o
+java:S2095["MUse try-with-resources or close this "DataInputStream" in a "finally" clause.(·ªóÌÿÿÿÿÿ8ÄóÈ”˜.
+k
+java:S2095&"NUse try-with-resources or close this "DataOutputStream" in a "finally" clause.(ÎÔÒ8Æ»²–.

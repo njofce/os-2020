@@ -14,6 +14,8 @@ public class Server extends Thread {
     private ServerSocket serverSocket;
     private Map<Integer, Candidate> candidates;
 
+    private Object object = new Object();
+
     public Server (int port) throws IOException {
         serverSocket = new ServerSocket(port);
         candidates = new HashMap<>();
@@ -44,10 +46,13 @@ public class Server extends Thread {
         outputStreamVotes.close();
     }
 
-    public synchronized void vote(int i) {
+    public void vote(int i) {
+
         if(i >=0 && i <=3) {
-            Candidate candidate = candidates.get(i);
-            candidate.votes++;
+            synchronized (object) {
+                Candidate candidate = candidates.get(i);
+                candidate.votes++;
+            }
         }
     }
 
@@ -63,6 +68,7 @@ public class Server extends Thread {
             Integer currentNumberOfVotes = votes.get(i);
             votes.set(i, currentNumberOfVotes + 1);
             inputStreamVotes.close();
+
             DataOutputStream outputStreamVotes = new DataOutputStream(new FileOutputStream("votes.txt"));
             for(int index = 0; index < 4; index++) {
                 outputStreamVotes.writeInt(votes.get(index));
@@ -130,7 +136,6 @@ public class Server extends Thread {
                 DataOutputStream outputStream = new DataOutputStream(accept.getOutputStream());
                 ServerWorker worker = new ServerWorker(this, inputStream, outputStream);
                 worker.start();
-
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }

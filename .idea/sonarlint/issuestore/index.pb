@@ -15,3 +15,25 @@ C
 src/av5/Client.java,a/8/a86548c58efc2c3c459d7ff2b33ab77b0be1e327
 N
 src/av5/NetworkingExample.java,7/8/78285032a8ff8c980e74baa410fb574ad54dc565
+>
+candidates.txt,e/9/e9dc31ef7dbfd17d0f4fbc396752855e90a665f9
+F
+src/av5/Candidate.java,b/2/b2a8e50db7a1f7e334b634a405f5eb4435e896c2
+9
+	votes.txt,8/d/8de8539796aa5b4711632218d6e617e735d33030
+I
+src/av5/ServerWorker.java,9/d/9d991ec1c93e7dff0265a46d6eab0a504f277a8b
+Q
+!src/av5/en/NetworkingExample.java,2/e/2ed312a3f333916e0af8ae8e6e9018bb6c4965c2
+F
+src/av5/en/Server.java,9/3/93b2458c219d3dd38bee2fdb712c469bce01f621
+R
+"src/av5/en/ServerWorkerThread.java,2/e/2e2dd90afa8e7bc027d33bbcb54ad642eb2d6b78
+F
+src/av5/en/Client.java,3/0/309a1fa6f98e2b9ea6b0105a69dff1be2bcb3dd1
+I
+src/av5/en/UDPClient.java,1/4/1445f4ee80d2098a806d32829c64dc8638459e21
+I
+src/av5/en/UDPServer.java,4/8/48f78b798c7ef2e624e547320d7fcf0589b5315e
+A
+src/av5/README.md,0/5/05913314c37af9459ab572e0f4d55a143cb0ee33
